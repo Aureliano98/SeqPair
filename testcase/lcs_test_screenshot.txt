@@ -1,0 +1,163 @@
+PS D:\rpgma\Documents\Visual Studio 2017\Projects\OOP\seqpair\submit> mingw32-make mingw32_autorun thrds=1 alpha=1 metho
+d=lcs
+./bin/mingw32_autorun.exe 1 lcs 1
+mingw32-make run_packer n=32 alpha=1 method=lcs thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect32.txt testcase/net32.txt 1 lcs testcase/layout32-1-lcs-1.txt 1
+Rectangles: 32
+Alpha: 1
+
+Method: LCS
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 1024
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 11606.5
+Starting min energy: 5330
+Starting max energy: 11374
+Stddev: 1222.87
+
+Finishing temperature: 22.1528
+Finishing energy: 2928
+Total simulations: 639040
+Total restarts: 0
+
+Runtime: 4859ms
+Sum of rectangle areas: 2550
+Area: 2928 (48, 61)
+Utilization: 0.870902
+Wirelength: 375
+Cost: 2928
+Answer accepted.
+mingw32-make[1]: Leaving directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+mingw32-make run_packer n=64 alpha=1 method=lcs thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect64.txt testcase/net64.txt 1 lcs testcase/layout64-1-lcs-1.txt 1
+Rectangles: 64
+Alpha: 1
+
+Method: LCS
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 1920
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 28025.4
+Starting min energy: 14260
+Starting max energy: 28688
+Stddev: 2952.77
+
+Finishing temperature: 19.1897
+Finishing energy: 6201
+Total simulations: 1393984
+Total restarts: 0
+
+Runtime: 24456ms
+Sum of rectangle areas: 5357
+Area: 6148 (116, 53)
+Utilization: 0.87134
+Wirelength: 1023
+Cost: 6148
+Answer accepted.
+mingw32-make[1]: Leaving directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+mingw32-make run_packer n=128 alpha=1 method=lcs thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect128.txt testcase/net128.txt 1 lcs testcase/layout128-1-lcs-1.txt 1
+Rectangles: 128
+Alpha: 1
+
+Method: LCS
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 3840
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 34235.5
+Starting min energy: 28819
+Starting max energy: 47008
+Stddev: 3607.07
+
+Finishing temperature: 22.7456
+Finishing energy: 11088
+Total simulations: 2799424
+Total restarts: 0
+
+Runtime: 125071ms
+Sum of rectangle areas: 8663
+Area: 10944 (152, 72)
+Utilization: 0.791575
+Wirelength: 4741
+Cost: 10944
+Answer accepted.
+mingw32-make[1]: Leaving directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+mingw32-make run_packer n=256 alpha=1 method=lcs thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect256.txt testcase/net256.txt 1 lcs testcase/layout256-1-lcs-1.txt 1
+Rectangles: 256
+Alpha: 1
+
+Method: LCS
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 7680
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 75549.7
+Starting min energy: 63180
+Starting max energy: 107100
+Stddev: 7959.95
+
+Finishing temperature: 25.8569
+Finishing energy: 23754
+Total simulations: 6105664
+Total restarts: 0
+
+Runtime: 679732ms
+Sum of rectangle areas: 19521
+Area: 23532 (212, 111)
+Utilization: 0.829551
+Wirelength: 11191
+Cost: 23532
+Answer accepted.
+mingw32-make[1]: Leaving directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+mingw32-make run_packer n=500 alpha=1 method=lcs thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect500.txt testcase/net500.txt 1 lcs testcase/layout500-1-lcs-1.txt 1
+Rectangles: 500
+Alpha: 1
+
+Method: LCS
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 15000
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 116253
+Starting min energy: 138754
+Starting max energy: 196186
+Stddev: 12248.5
+
+Finishing temperature: 21.99
+Finishing energy: 46750
+Total simulations: 12810064
+Total restarts: 0
+
+Runtime: 7727117ms
+Sum of rectangle areas: 37372
+Area: 46625 (373, 125)
+Utilization: 0.801544
+Wirelength: 52514.5
+Cost: 46625
+Answer accepted.
+mingw32-make[1]: Leaving directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'

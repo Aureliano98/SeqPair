@@ -1,0 +1,89 @@
+PS D:\rpgma\Documents\Visual Studio 2017\Projects\OOP\seqpair\submit> mingw32-make mingw32_autorun alpha=1.0 method=dag
+thrds=1
+bin/mingw32_autorun.exe 1.0 dag 1
+mingw32-make run_packer n=32 alpha=1 method=dag thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect32.txt testcase/net32.txt 1 dag testcase/layout32-1-dag-1.txt 1
+Rectangles: 32
+Alpha: 1
+
+Method: DAG
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 1024
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 15893.9
+Starting min energy: 5551
+Starting max energy: 12190
+Stddev: 1674.59
+
+Finishing temperature: 21.1264
+Finishing energy: 3087
+Total simulations: 675904
+Total restarts: 21
+
+Runtime: 82730ms
+Sum of rectangle areas: 2550
+Area: 2916 (54, 54)
+Utilization: 0.874486
+Wirelength: 243
+Cost: 2916
+Answer accepted.
+mingw32-make[1]: Leaving directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+mingw32-make run_packer n=64 alpha=1 method=dag thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect64.txt testcase/net64.txt 1 dag testcase/layout64-1-dag-1.txt 1
+Rectangles: 64
+Alpha: 1
+
+Method: DAG
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 1920
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 21494.3
+Starting min energy: 11316
+Starting max energy: 23046
+Stddev: 2264.65
+
+Finishing temperature: 19.3059
+Finishing energy: 6370
+Total simulations: 1342144
+Total restarts: 0
+
+Runtime: 525471ms
+Sum of rectangle areas: 5357
+Area: 6016 (94, 64)
+Utilization: 0.890459
+Wirelength: 959.5
+Cost: 6016
+Answer accepted.
+mingw32-make[1]: Leaving directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+mingw32-make run_packer n=128 alpha=1 method=dag thrds=1
+mingw32-make[1]: Entering directory 'D:/rpgma/Documents/Visual Studio 2017/Projects/OOP/seqpair/submit'
+bin/run_packer.exe testcase/rect128.txt testcase/net128.txt 1 dag testcase/layout128-1-dag-1.txt 1
+Rectangles: 128
+Alpha: 1
+
+Method: DAG
+Threads: 1
+initial_accepting_probability: 0.9
+simulations_per_temperature: 3840
+decreasing_ratio: 0.99
+restart_ratio: 2
+stopping_accepting_probability: 0.05
+
+Starting temperature: 43487.1
+Starting min energy: 26720
+Starting max energy: 51541
+Stddev: 4581.82
+makefile:66: recipe for target 'run_packer' failed
+mingw32-make[1]: *** [run_packer] Interrupt
+makefile:74: recipe for target 'mingw32_autorun' failed
+mingw32-make: *** [mingw32_autorun] Interrupt
