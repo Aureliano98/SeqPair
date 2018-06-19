@@ -16,9 +16,9 @@
 
 namespace rect_packing {
     // Wirelength.
-    template<typename InIt, typename Alloc>
+    template<typename Alloc, typename FwdIt>
     double sum_manhattan_distances(const Layout<Alloc> &layout,
-        InIt first, InIt last) {
+        FwdIt first, FwdIt last) {
         using namespace std;
         int64_t twice = 0;
         for (auto i = first; i != last; ++i) {
@@ -35,8 +35,8 @@ namespace rect_packing {
     }
 
     // Default packing cost.
-    template<typename Alloc, typename InIt>
-    double packing_cost(const Layout<Alloc> &layout, InIt first, InIt last,
+    template<typename Alloc, typename FwdIt>
+    double packing_cost(const Layout<Alloc> &layout, FwdIt first, FwdIt last,
         int w, int h, double alpha) {
         auto area = w * h;
         auto len = sum_manhattan_distances(layout, first, last);
@@ -51,9 +51,9 @@ namespace rect_packing {
                 default_energy_function(1.0) { }
             default_energy_function(double alpha) : alpha(alpha) {}
 
-            template<typename Alloc, typename InIt>
-            double operator()(const Layout<Alloc> &layout, InIt first,
-                InIt last, int w, int h) const {
+            template<typename Alloc, typename FwdIt>
+            double operator()(const Layout<Alloc> &layout, FwdIt first,
+                FwdIt last, int w, int h) const {
                 return packing_cost(layout, first, last, w, h, alpha);
             }
 
